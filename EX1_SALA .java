@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package exercicios_sala_ALP;
+
 import java.util.Scanner;
 
 /**
  *
  * @author joao.serafim
  */
-public class EX1_SALA {
+public class EX1_SALA{
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
