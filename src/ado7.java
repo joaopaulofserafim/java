@@ -6,7 +6,7 @@ import java.util.Collections;
 public static void main(String[] args) {
     Scanner input = new Scanner (System.in);
 
-    System.out.println("*****ADOO7*****");
+    System.out.println("*****ADO_7*****");
 
     System.out.println("Qual é o principal objetivo do design de UX?");
     System.out.println("a) Criar interfaces visualmente atraentes");
