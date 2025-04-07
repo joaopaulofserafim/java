@@ -29,10 +29,11 @@ public class suflle{
                 };
 
                 System.out.print("\n Escolha a alternativa correta: ");
-                String infoUsuario = input.nextLine().trim().toLowerCase();
+                String infoUsuario = input.nextLine().trim(); // trim = tira os espaços em branco
 
     switch (infoUsuario) {
     case "a":
+    case "A":
         if (opcoes.get(0).equalsIgnoreCase(alternativaCorreta)) {  // equalIgonoreCase (ignora CAPS ou caps)GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
@@ -44,6 +45,7 @@ public class suflle{
         break;
 
         case "b":
+        case "B":
             if (opcoes.get(1).equalsIgnoreCase(alternativaCorreta)) {// equalIgonoreCase (ignora CAPS ou caps) / GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
@@ -55,6 +57,7 @@ public class suflle{
          break;
 
         case "c":
+        case "C":
             if (opcoes.get(2).equalsIgnoreCase(alternativaCorreta)) {// equalIgonoreCase (ignora CAPS ou caps) GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
@@ -66,6 +69,7 @@ public class suflle{
         break;
 
             case "d":
+            case "D":
             if (opcoes.get(3).equalsIgnoreCase(alternativaCorreta)) {
             System.out.println("Resposta Correta.");
             certo = true;
@@ -76,6 +80,7 @@ public class suflle{
         
         break;
         case "e":
+        case "E":
 
         if (opcoes.get(4).equalsIgnoreCase(alternativaCorreta)) {
         System.out.println("Resposta Correta");
