@@ -8,7 +8,7 @@ public class suflle{
 
     ArrayList<String> opcoes = new ArrayList();    // Adicionando tudo em uma lista 
 
-    opcoes.add("Criar interfaces visualmente atraentes");
+    opcoes.add("Criar interfaces visualmente atraentes"); // APPEND NO ARRAY 
     opcoes.add("Melhorar a experiência do usuário com o produto");
     opcoes.add("Focar apenas na estética do produto");
     opcoes.add("Tornar o produto mais barato de ser produzido");
@@ -16,7 +16,7 @@ public class suflle{
 
     String alternativaCorreta = "Melhorar a experiência do usuário com o produto"; // declaradno a correta
 
-    String[] letras = { "a", "b", "c", "d", "e"}; // adicionadno as letras em uma lista 
+    String[] alternativas = { "A", "B", "C", "D", "E"}; // adicionadno as letras em uma lista 
 
     boolean certo = false;
 
@@ -24,16 +24,16 @@ public class suflle{
         Collections.shuffle(opcoes);
         System.out.println("\n Qual é o principal objetivo do design de UX ? \n ");
 
-            for (int i = 0; i < opcoes.size(); i++) {
-                System.out.println("(" + letras[i] + ")" + " " + opcoes.get(i)); // pegando (get) uma letra (indice)
+            for (int i = 0; i < opcoes.size(); i++) { // size, percorre a lista enquato o indice for 0
+                System.out.println("(" + alternativas[i] + ")" + " " + opcoes.get(i)); // pegando (get) uma letra (indice)
                 };
 
                 System.out.print("\n Escolha a alternativa correta: ");
-                String respostaUser = input.nextLine().trim().toLowerCase();
+                String infoUsuario = input.nextLine().trim().toLowerCase();
 
-    switch (respostaUser) {
+    switch (infoUsuario) {
     case "a":
-        if (opcoes.get(0).equalsIgnoreCase(alternativaCorreta)) {
+        if (opcoes.get(0).equalsIgnoreCase(alternativaCorreta)) {  // equalIgonoreCase (ignora CAPS ou caps)GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
 
@@ -44,7 +44,7 @@ public class suflle{
         break;
 
         case "b":
-            if (opcoes.get(1).equalsIgnoreCase(alternativaCorreta)) {
+            if (opcoes.get(1).equalsIgnoreCase(alternativaCorreta)) {// equalIgonoreCase (ignora CAPS ou caps) / GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
 
@@ -55,7 +55,7 @@ public class suflle{
          break;
 
         case "c":
-            if (opcoes.get(2).equalsIgnoreCase(alternativaCorreta)) {
+            if (opcoes.get(2).equalsIgnoreCase(alternativaCorreta)) {// equalIgonoreCase (ignora CAPS ou caps) GET pega um indice da lista opções (perguntas)
             System.out.println("Resposta Correta!");
             certo = true;
 
