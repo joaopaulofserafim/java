@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author joao.serafim
  */
-public class EX4_SALA {
+public class EX4_SALAp {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("*****Cálculo kWh*****");

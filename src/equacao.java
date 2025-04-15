@@ -13,8 +13,8 @@ public class equacao {
 
         int um;
         do {
-            um = random.nextInt((maximo - minimo) + 1) + minimo;
-        } while (um == 0);
+            // um = random.nextInt((maximo - minimo) + 1) + minimo;
+        } while (maximo == 0); // está errado, apenas teste no while
 
     }
 }
