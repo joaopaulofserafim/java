@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author joao.pfserafim1
  */
-public class switch1 {
+public class switch11 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.println("*****Dia da Semana*****");

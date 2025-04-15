@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author Lenovo
  */
-public class IMC {
+public class IMC2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         

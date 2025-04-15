@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author joao.pfserafim1
  */
-public class question {
+public class questionReady21 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("*****Questão*****");

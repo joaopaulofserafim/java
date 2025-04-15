@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author joao.serafim
  */
-public class EX3_SALA {
+public class EX3_SALA1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         

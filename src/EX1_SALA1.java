@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author joao.serafim
  */
-public class EX1_SALA {
+public class EX1_SALA1 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

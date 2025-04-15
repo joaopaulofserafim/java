@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author joao.serafim
  */
-public class EX2_SALA {
+public class EX2_SALA121 {
     public static void main(String[] args) {
         System.out.println("*****Divindo*****");
         
