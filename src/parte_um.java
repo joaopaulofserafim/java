@@ -14,7 +14,7 @@ Além de exibir o novo salário, o programa também deve mostrar a diferença en
 
 import java.util.Scanner;
 
-public class parte_1 {
+public class parte_um {
 
 
     public static String entradaNome(){
