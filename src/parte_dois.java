@@ -76,9 +76,6 @@ public class parte_dois {
      public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
 
-        boolean certo = true;
-
-        while (certo) {
             
             int usuario = entrada();
     
@@ -105,4 +102,3 @@ public class parte_dois {
     }
 
     
-}
