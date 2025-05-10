@@ -43,7 +43,7 @@ public class ADO_10 {
             }
         }
         
-        if ( ! certo) {
+        if ( certo == false) {
             System.out.printf("Game Over\nSuas tentativas acabaram\nNúmero correto: %d\n",escolhaMaquina);
                         
             }
