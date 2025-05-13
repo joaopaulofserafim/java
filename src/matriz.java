@@ -29,8 +29,6 @@ public class matriz {
                 soma = soma + matriz[i][j];
 
             }
-            
-
         }
 
         System.out.println(soma);
@@ -53,15 +51,6 @@ public class matriz {
 
         System.out.printf("quantidade: "+ qnt);
 
-
-
-
-
-
     }
-
-
-
-
 
 }
