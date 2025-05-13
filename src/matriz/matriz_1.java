@@ -1,4 +1,5 @@
-public class matriz {
+package matriz;
+public class matriz_1 {
     
     public static void main(String[] args) {
 

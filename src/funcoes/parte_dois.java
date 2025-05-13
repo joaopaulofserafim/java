@@ -1,3 +1,4 @@
+package funcoes;
 /*Escreva um programa em Java que implemente o jogo conhecido como pedra, papel, tesoura. Neste jogo, o usuário e o computador escolhem entre pedra, papel ou tesoura. Sabendo que pedra ganha de tesoura, papel ganha de pedra e tesoura ganha de papel, exiba na tela o ganhador: usuário ou computador. Para essa implementação, assuma que o número 0 representa pedra, 1 representa papel e 2 representa tesoura. Para sortear a jogada do computador, adicione a seguinte função ao seu programa:
 java.util.Random; 
 public static int randInt(int min, int max) {

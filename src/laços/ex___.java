@@ -1,3 +1,4 @@
+package laços;
 public class ex___ {
     public static void main(String[] args) {
 

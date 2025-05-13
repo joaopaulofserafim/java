@@ -1,3 +1,4 @@
+package funcoes;
 // entrada (nome e salario atual  ou FIM)
 // processamento (calcular o reajuste)
 // processamento (diferença entre os salarios atual e novo)

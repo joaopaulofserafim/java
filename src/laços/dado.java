@@ -1,3 +1,4 @@
+package laços;
 import java.util.Random;  
 public class dado {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package funcoes;
 import java.util.Scanner;
 public class funcoes_calc {
 

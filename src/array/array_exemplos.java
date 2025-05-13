@@ -1,3 +1,4 @@
+package array;
 public class array_exemplos {
     public static void main(String[] args) {
         // criando vetor

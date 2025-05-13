@@ -1,3 +1,4 @@
+package vetores;
 import java.util.Scanner;
 
 // - obter qunatos funcionarios 

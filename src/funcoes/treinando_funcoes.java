@@ -1,3 +1,4 @@
+package funcoes;
 import java.util.Scanner;
 public class treinando_funcoes {
 //  Criar um programa que receba um número do usuário e imprima a tabuada desse número de 1 a 10, utilizando uma função para gerar os resultados.

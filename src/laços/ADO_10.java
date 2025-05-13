@@ -1,3 +1,4 @@
+package laços;
 /*Um jogo bem simples consiste em tentar adivinhar um valor inteiro aleatório
 escolhido entre 1 e 100 por um computador  
 (random 1 a 100).

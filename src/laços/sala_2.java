@@ -1,3 +1,4 @@
+package laços;
 import java.util.Scanner;
 
 public class sala_2 {
