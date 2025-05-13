@@ -93,15 +93,15 @@ public class matriz_2 {
         int [] v = definirTamanho(); // nessa função só define o tamanho do array, e coloca nos indices 0 e 1 e aloca na variavel "V"
 
         int [][] matriz = criarMatriz(v[0], v[1]);  /*  aqui que vai ser criada a matriz,  na função " criar matriz" e passado  
-                                                         2 parametros que foram pegos na função "definir tamanho e aloca na linha 1 da coluna 1 da matrizz"
-                                                         */
+                                                    2 parametros que foram pegos na função "definir tamanho" e da variavel "v" e aloca na linha 1 da coluna 1 da matrizz
+                                                    */
          
 
         imprimir(matriz);
         
         System.out.println("Somando: "+ somatorio(matriz));
 
-        //OU    // DA NA MESMA
+        //OU    // DA NA MESMA 
 
         int negativos = qntdNegativos(matriz);
 
