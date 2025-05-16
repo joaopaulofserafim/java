@@ -41,7 +41,7 @@ public class treinando_matriz {
 
        for(int i = 0 ; i < matriz.length ; i ++){
             for(int j = 0 ; j < matriz[i].length ; j++){
-                System.out.printf("Notas: (L)%d (C)%d", i,j);
+                System.out.printf("Notas: (Aluno)%d (Nota)%d: ", i,j);
                 matriz[i][j] = input.nextInt();
             }
        }
@@ -53,9 +53,9 @@ public class treinando_matriz {
         for(int i = 0 ; i < matriz.length ; i ++){
             System.out.print("Aluno " + (i + 1) + ": ");
             for(int j = 0 ; j < matriz[i].length ; j++){
-                System.out.print(matriz[i][j] + "\t"+"\n");
+                System.out.print(matriz[i][j] + "\t");
             }
-
+            System.out.println();
          }
     
     }
@@ -105,6 +105,21 @@ public class treinando_matriz {
     return contador;
     }
 
+    public static double[] mediaPorAluno(int[][] matriz) {
+        double[] medias = new double[matriz.length]; // uma media a cada aluno
+    
+        int soma = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) { // percorre a matriz 
+                soma = soma + matriz[i][j];
+            }
+            medias[i] = (double) soma / matriz[i].length;  // media [i] recebe (conta para fazer a media), 
+                                                            //ou seja variavel soma (que ja esta somando td) divido pela quantidade de indices na matriz 
+        }
+    
+        return medias;
+    }
+    
 
 
     public static void main(String[] args) {
@@ -114,12 +129,18 @@ public class treinando_matriz {
         imprimir(notas);
 
         int total = soma(notas);
-        double mediaGeral = media(total, notas);
+        double mediaGeral = media(notas);
 
         System.out.printf("\nMédia geral das notas: %.2f\n", mediaGeral);
 
         int acimaMedia = acimaMedia(notas, mediaGeral);
         System.out.println("Notas acima da média: " + acimaMedia);
+
+        double[] mediasAlunos = mediaPorAluno(notas);
+            for (int i = 0; i < mediasAlunos.length; i++) {
+               System.out.printf("Média do aluno %d: %.2f\n", i + 1, mediasAlunos[i]);
+            }
+
 
     }
 }
