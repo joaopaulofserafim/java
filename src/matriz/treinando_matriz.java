@@ -51,8 +51,9 @@ public class treinando_matriz {
 
     public static void imprimir (int [][] matriz){
         for(int i = 0 ; i < matriz.length ; i ++){
+            System.out.print("Aluno " + (i + 1) + ": ");
             for(int j = 0 ; j < matriz[i].length ; j++){
-                System.out.printf("Nota linha-[%d]  Coluna-[$d]   - %d", i,j,matriz[i][j]);
+                System.out.print(matriz[i][j] + "\t"+"\n");
             }
 
          }
@@ -70,27 +71,55 @@ public class treinando_matriz {
                 soma = soma + matriz[i][j] ;
 
             }
-            return soma;
-
+            
         }   
+        return soma;
     }
 
-    public static int media (int soma, int [][] matriz){
-        int media = 0;
-
-        for(int i = 0 ; i < matriz.length ; i ++){
-            for(int j = 0 ; j < matriz[i].length ; j++){
-
-                media = soma /  matriz;
-                
-            }
-         
-
-    }
-
-
-
-
-
+    public static double media(int[][] matriz) {
+        double soma = 0;
+        double total = 0;
     
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                soma = soma + matriz[i][j];
+                total++; 
+            }
+        }
+    
+        return soma / total;
+    }
+
+    public static int acimaMedia(int [][] matriz, double media){
+        int contador = 0; 
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++){
+                if (matriz[i][j] > media) {
+                    contador ++;
+                    
+                }
+            }
+
+         
+    }
+    return contador;
+    }
+
+
+
+    public static void main(String[] args) {
+        int [] tamanho = definirTamanho();
+        int [][] notas = criarMatriz(tamanho[0], tamanho[1]);
+
+        imprimir(notas);
+
+        int total = soma(notas);
+        double mediaGeral = media(total, notas);
+
+        System.out.printf("\nMédia geral das notas: %.2f\n", mediaGeral);
+
+        int acimaMedia = acimaMedia(notas, mediaGeral);
+        System.out.println("Notas acima da média: " + acimaMedia);
+
+    }
 }
